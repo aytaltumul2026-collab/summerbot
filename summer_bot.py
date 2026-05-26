@@ -24,7 +24,7 @@ from telegram.ext import (
 TOKEN = os.environ.get("TOKEN", "")           # Токен от @BotFather
 ADMIN_ID = int(os.environ.get("ADMIN_ID", "0"))                        # Твой Telegram ID (узнай у @userinfobot)
 PAYMENT_TOKEN = "ВСТАВЬ_ТОКЕН_ОПЛАТЫ"      # Токен от @SberbankPaymentBot или ЮКасса
-CLAUDE_API_KEY = os.environ.get("CLAUDE_API_KEY", "")"   # Ключ от console.anthropic.com
+CLAUDE_API_KEY = os.environ.get("CLAUDE_API_KEY", "")   # Ключ от console.anthropic.com
 
 # ══════════════════════════════════════════
 #  КАТАЛОГ ТОВАРОВ
