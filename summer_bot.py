@@ -5,7 +5,8 @@
 Автор: Videos• Team
 """
 
-import logging import os
+import logging
+import os
 import httpx
 from telegram import (
     Update, InlineKeyboardButton, InlineKeyboardMarkup,
