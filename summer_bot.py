@@ -5,7 +5,7 @@
 Автор: Videos• Team
 """
 
-import logging
+import logging import os
 import httpx
 from telegram import (
     Update, InlineKeyboardButton, InlineKeyboardMarkup,
@@ -20,10 +20,10 @@ from telegram.ext import (
 # ══════════════════════════════════════════
 #  НАСТРОЙКИ — ЗАПОЛНИ ПЕРЕД ЗАПУСКОМ
 # ══════════════════════════════════════════
-TOKEN = "8996102976:AAHUHjrpz6OKOekzT8IedorXoOuQjh7Gxo4"           # Токен от @BotFather
-ADMIN_ID = 2084021782                        # Твой Telegram ID (узнай у @userinfobot)
+TOKEN = os.environ.get("TOKEN", "")           # Токен от @BotFather
+ADMIN_ID = int(os.environ.get("ADMIN_ID", "0"))                        # Твой Telegram ID (узнай у @userinfobot)
 PAYMENT_TOKEN = "ВСТАВЬ_ТОКЕН_ОПЛАТЫ"      # Токен от @SberbankPaymentBot или ЮКасса
-CLAUDE_API_KEY = "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"   # Ключ от console.anthropic.com
+CLAUDE_API_KEY = "CLAUDE_API_KEY = os.environ.get("CLAUDE_API_KEY", "")"   # Ключ от console.anthropic.com
 
 # ══════════════════════════════════════════
 #  КАТАЛОГ ТОВАРОВ
