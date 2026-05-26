@@ -6,7 +6,6 @@
 """
 
 import logging
-import os
 import httpx
 from telegram import (
     Update, InlineKeyboardButton, InlineKeyboardMarkup,
@@ -21,10 +20,10 @@ from telegram.ext import (
 # ══════════════════════════════════════════
 #  НАСТРОЙКИ — ЗАПОЛНИ ПЕРЕД ЗАПУСКОМ
 # ══════════════════════════════════════════
-TOKEN = os.environ.get("TOKEN", "")           # Токен от @BotFather
-ADMIN_ID = int(os.environ.get("ADMIN_ID", "0"))                        # Твой Telegram ID (узнай у @userinfobot)
+TOKEN = "ВСТАВЬ_СВОЙ_ТОКЕН_СЮДА"           # Токен от @BotFather
+ADMIN_ID = 123456789                        # Твой Telegram ID (узнай у @userinfobot)
 PAYMENT_TOKEN = "ВСТАВЬ_ТОКЕН_ОПЛАТЫ"      # Токен от @SberbankPaymentBot или ЮКасса
-CLAUDE_API_KEY = os.environ.get("CLAUDE_API_KEY", "")   # Ключ от console.anthropic.com
+CLAUDE_API_KEY = "ВСТАВЬ_CLAUDE_API_KEY"   # Ключ от console.anthropic.com
 
 # ══════════════════════════════════════════
 #  КАТАЛОГ ТОВАРОВ
